@@ -1,0 +1,17 @@
+<h2>{{ title }}</h2>
+<div *ngIf="authenticated">
+    <img 
+        [src]='srcPath' 
+        [alt]='altText'
+        [ngStyle]="{'imageBorderColor': imageBorderColor}"
+    />
+</div>
+
+<button (click)="updateUi()">Event</button>
+
+<div>
+    <select (change)="onChange($event)">
+        <option>Selectionne une option</option>
+        <option *ngFor="let option of options">{{ option }}</option>
+    </select>
+</div>
