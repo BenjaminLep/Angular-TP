@@ -1,0 +1,10 @@
+<h2>{{ title }}</h2>
+
+<div *ngFor="let pics of carousel">
+    <img *ngIf="authenticated"
+    [src]='srcPath' 
+    />
+</div>
+
+
+<button (click)="updateCarousel()">carousel</button>
