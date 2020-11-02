@@ -10,7 +10,7 @@ export class HeaderComponent {
   title: string = "header component";
   altText: string = "photo d'un loup";
   srcPath: string = "https://www.lafranceagricole.fr/ra/lowres/Publie/FA/p1/Images/Web/2020-10-30/loup-kdPG-U103019894987hND-860x420%40lafranceagricole.fr.JPG";
-  authenticated: boolean = false;
+  authenticated: boolean = true;
   options: string[] = ["rouge", "vert", "orange"];
   imageBorderColor : string = "black";
 
